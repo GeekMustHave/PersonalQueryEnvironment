@@ -1,6 +1,6 @@
 = Personal Query Environment (PQE)
 John Schuster <John.schuster@PhoenixWorkgroup.com>
-v2.1b, 01/24/2019: Doco Type
+v2.1b, 01/24/2019: User Documentation
 :Author: John HR Schuster
 :Company: Phoenix Learning Labs
 :toc: left
@@ -18,9 +18,63 @@ v2.1b, 01/24/2019: Doco Type
 :seclinks:
 :title-logo-image: ./images/create-doco_gmh-blogArticle-cover.png
 
-Preamble paragraph goes here
+Personal Query Environment (PQE) is a research project to determine how to use Microsoft Access as a SQL query tool for Teradata.
+The original version of this experiment started in 1996 with Access 2.  This version uses some of the code from the original with updated required for the newer MSAccess and Teradata.
+
+PQE is considered public domain with MIT License.  
+Use PQE at your own risk.
+
 
 == Introduction
+
+Personal Query Environment (PQE) is a single file Microsoft Access 2010 file.
+
+It can be used to do Teradata SQL development through the Teradata ODBC driver.
+
+ODBC Data Source Names (DSN) determine how to access the physical Teradata server.
+
+Users must login to PQE using their existing Teradata user id and password for the Teradata server they are connecting to.  
+
+PQE does *NOT* save the Password information anywhere.  
+
+One of PQE's original design considerations was to be an easy alternative to SQL Assistant.
+
+PQE requires that the users know how to write Teradata Syntax SQL statements to get results.
+
+All of the source code for the Visual Basic For Application (VBA) is included and commented in PQE.
+
+== Features
+
+* Simple login using ODBC DSN
+* Passthrough window for testing new SQL
+* Scratch Pad to save Teradata SQL that might be useful later
+* Catalog of SQL statements with descriptions that can be recalled and tested
+* Results come back in a grid formatted page
+* Documentation about PQE is included in a Documentation tab
+* Version information indicates if you are using the correct version
+* Only one MS Access passthough query controls all access to the Teradata server
+* There are zero, no `Linked` table to Teradata
+* The MSAccess tool ribbon and database panels are hidden to maximize the space and avoid tinkering
+
+
+
+== ToDo Items
+
+* Multiple SQL statement query processing
+* Parameter Handling with grid entry and sticky responses
+* Export results of a query
+* Export local table to Teradata
+
+== Contact Information
+
+The author can be contacted at geek.musthave@PhoenixWorkgroup.com.
+
+Special thanks goes out to
+
+* Phoenix Workgroup LLC for access to servers and GitHub
+* Phoenix Learning Labs for access to the video training lab amd materials
+* GeekMustHave which hosts a Research Teradata server for testing
+
 
 
 
